@@ -5,7 +5,7 @@ const checkInput = document.querySelectorAll(".add-product__input")[3];
 
 const productName = ['Хлеб', 'Майонез', 'Порошок стиральный', 'Пиво', 'Водка'];
 const productCount = [2, 1, 1, 3, 1];
-const productCategory = ['Продукты питания', 'Продукты питания', 'Бытовая химия', 'Алкоголь', 'Алкоголь'];
+const productCategory = ['Продукты питания', 'Бытовая химия', 'Алкоголь'];
 const productPrice = [76, 100, 360, 85, 200];
 
 checkbox.addEventListener("change", () => {
