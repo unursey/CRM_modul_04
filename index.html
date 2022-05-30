@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Modul04 Lesson1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <section class="add-product">
+      <div class="container add-product__container">
+        <h1 class="add-product__title">Добавить товар</h1>
+
+        <form id="form" class="add-product__form">
+          <fieldset>
+            <label class="add-product__label">
+              Наименование
+              <input
+                class="add-product__input"
+                type="text"
+                name="name"
+                value=""
+              />
+            </label>
+
+            <label class="add-product__label">
+              Категория
+              <input
+                class="add-product__input"
+                type="text"
+                name="name"
+                value=""
+              />
+            </label>
+
+            <label class="add-product__label">
+              Единицы измерения
+              <input
+                class="add-product__input"
+                type="text"
+                name="units"
+                value=""
+              />
+            </label>
+
+            <label class="add-product__label"> Дисконт </label>
+
+            <div class="add-product__discount">
+              <input
+                class="add-product__checkbox"
+                type="checkbox"
+                name="discount-checkbox"
+              />
+
+              <input
+                class="add-product__input"
+                type="text"
+                name="discount"
+                value=""
+                disabled
+              />
+            </div>
+
+            <label class="add-product__label">
+              Описание
+              <textarea
+                class="add-product__input add-product__input_large"
+                type="text"
+                name="description"
+              >
+              </textarea>
+            </label>
+
+            <label class="add-product__label">
+              Количество
+              <input
+                class="add-product__input"
+                type="text"
+                name="count"
+                value=""
+                required
+              />
+            </label>
+
+            <label class="add-product__label">
+              Цена
+              <input
+                class="add-product__input"
+                type="number"
+                name="price"
+                value=""
+              />
+            </label>
+          </fieldset>
+        </form>
+
+        <button form="form" class="add-product__button" type="submit">
+          Добавить товар
+        </button>
+
+        <svg
+          class="add-product__close"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 2L22 22"
+            stroke="#6E6893"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M2 22L22 2"
+            stroke="#6E6893"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </section>
+  </body>
+</html>
