@@ -21,13 +21,13 @@
   </head>
 
   <body>
-    <section class="add-product">
+    <div class="overlay">
       <div class="container add-product__container">
         <h1 class="add-product__title">Добавить товар</h1>
 
         <form id="form" class="add-product__form">
-          <fieldset>
-            <label class="add-product__label">
+          <fieldset class="add-product__fieldset">
+            <label class="add-product__label add-product__label-name">
               Наименование
               <input
                 class="add-product__input"
@@ -37,7 +37,7 @@
               />
             </label>
 
-            <label class="add-product__label">
+            <label class="add-product__label add-product__label-category">
               Категория
               <input
                 class="add-product__input"
@@ -47,7 +47,7 @@
               />
             </label>
 
-            <label class="add-product__label">
+            <label class="add-product__label add-product__label-units">
               Единицы измерения
               <input
                 class="add-product__input"
@@ -57,7 +57,7 @@
               />
             </label>
 
-            <label class="add-product__label"> Дисконт </label>
+            <label class="add-product__label add-product__label-discount"> Дисконт </label>
 
             <div class="add-product__discount">
               <input
@@ -75,7 +75,7 @@
               />
             </div>
 
-            <label class="add-product__label">
+            <label class="add-product__label add-product__label-description">
               Описание
               <textarea
                 class="add-product__input add-product__input_large"
@@ -85,7 +85,7 @@
               </textarea>
             </label>
 
-            <label class="add-product__label">
+            <label class="add-product__label add-product__label-count">
               Количество
               <input
                 class="add-product__input"
@@ -96,7 +96,7 @@
               />
             </label>
 
-            <label class="add-product__label">
+            <label class="add-product__label add-product__label-price">
               Цена
               <input
                 class="add-product__input"
@@ -105,6 +105,11 @@
                 value=""
               />
             </label>
+
+            <label class="add-product__label add-product__label-image">
+              Добавить изображение
+              <input class="add-product__input add-product__input-image" type="file" name="file" value="Добавить изображение" accept="image/*">
+            </label>
           </fieldset>
         </form>
 
@@ -112,8 +117,9 @@
           Добавить товар
         </button>
 
+        <button class="add-product__button-close">
         <svg
-          class="add-product__close"
+          class="add-product__img-close"
           width="20"
           height="20"
           viewBox="0 0 24 24"
@@ -133,7 +139,8 @@
             stroke-linecap="round"
           />
         </svg>
+      </button>
       </div>
-    </section>
+    </div>
   </body>
 </html>

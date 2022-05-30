@@ -48,7 +48,7 @@ h1, h2, h3, p, figure, fieldset {
 }
 
 .container {
-  max-width: 792px;
+  max-width: 1300px;
   padding: 0 30px;
   margin: 0 auto;
 }
