@@ -209,10 +209,12 @@
 }
 
 .list-product__table-foot {
+  min-width: 1100px;
   background-color: var(--lightviolet-color, #f4f2ff);
 }
 
 .list-product__table-footblock {
+  min-width: 500px;
   height: 45px;
   display: flex;
   gap: 50px;

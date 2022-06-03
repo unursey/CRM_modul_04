@@ -18,7 +18,9 @@
     <title>Modul04 Lesson1</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="./js/script.js"></script>
-    <script defer src="./js/einstein.js"></script>
+    <script defer src="./js/tasks.js"></script>
+    <script defer src="./js/tasksHard_1.js"></script>
+    <script defer src="./js/tasksHard_2.js"></script>
   </head>
 
   <body>
@@ -35,9 +37,8 @@
         </div>
 
         <div class="list-product__block-table">
-          <table class="list-product__table">
-            <div class="list-product__table-nav">
-              <div class="list-product__table-subnav">
+          <div class="list-product__table-nav">
+            <div class="list-product__table-subnav">
               <button class="list-product__table-filter">
                 Фильтр
               </button>
@@ -47,10 +48,12 @@
               </label>
             </div>
 
-              <button class="list-product__table-add">
-                Добавить товар
-              </button>
-            </div>
+            <button class="list-product__table-add">
+              Добавить товар
+            </button>
+          </div>
+
+          <table class="list-product__table">  
             <thead class="list-product__table-head">
               <tr>
                 <th class="list-product__table-td">ID</th>
@@ -206,41 +209,36 @@
                 </td>
               </tr>                                                                                                                
             </tbody>
-        
-            <tfoot class="list-product__table-foot">
-              <tr>
-                <th colspan="8">
-                  <div class="list-product__table-footblock">
-                    <div>
-                      <span>Показывать на странице:</span>
-                      <select class="list-product__table-select">
-                        <option>10</option>
-                        <option>50</option>
-                        <option>100</option>
-                      </select>
-                    </div>
-  
-                    <div class="list-product__table-content">
-                      <div>1-10 of</div>
-
-                      <div>276</div>
-                    </div>
-  
-                    <button class="list-product__table-arrow list-product__table-left" aria-label="left"></button>
-  
-                    <button class="list-product__table-arrow list-product__table-right" aria-label="right"></button>
-                  </div>
-                </th>
-              </tr>
-            </tfoot>
           </table>
-        </div>
 
+          <div class="list-product__table-foot">         
+              <div class="list-product__table-footblock">
+                <div>
+                  <span>Показывать на странице:</span>
+                  <select class="list-product__table-select">
+                    <option>10</option>
+                    <option>50</option>
+                    <option>100</option>
+                  </select>
+                </div>
+  
+                <div class="list-product__table-content">
+                  <div>1-10 of</div>
+
+                  <div>276</div>
+                </div>
+  
+                <button class="list-product__table-arrow list-product__table-left" aria-label="left"></button>
+  
+                <button class="list-product__table-arrow list-product__table-right" aria-label="right"></button>
+              </div>
+            </div>         
+        </div>
       </div>
     </section>
 
     <div class="overlay">
-      <div class="container add-product__container">
+      <div class="add-product">
         <div class="add-product__header">
           <h2 class="add-product__title">Добавить товар</h2>
 
@@ -301,7 +299,6 @@
               Описание
               <textarea
                 class="add-product__input add-product__input_large"
-                type="text"
                 name="description"
               >
               </textarea>
@@ -330,7 +327,7 @@
 
             <label class="add-product__label add-product__label-image">
               Добавить изображение
-              <input class="add-product__input add-product__input-image" type="file" name="file" value="Добавить изображение" accept="image/*">
+              <input class="add-product__input add-product__input-image" type="file" name="file" accept="image/*">
             </label>
 
             <div class="add-product__warning">
