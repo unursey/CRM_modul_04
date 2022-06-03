@@ -74,4 +74,4 @@ const myData = {
   },
 };
 
-myData.question();
+//myData.question();

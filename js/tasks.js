@@ -11,7 +11,7 @@ const weatherForecast = function () {
     }
 };
 
-weatherForecast();
+//weatherForecast();
 
 const universityAdmission = function () {
     const mathBall = +prompt("Введите кол-во баллов по математике");
@@ -31,7 +31,7 @@ const universityAdmission = function () {
     }
 };
 
-universityAdmission();
+//universityAdmission();
 
 const atm = function () {
     const money = +prompt("Владимир, сколько денег Вы хотите снять?");
@@ -45,4 +45,4 @@ const atm = function () {
 
 };
 
-atm();
+//atm();
