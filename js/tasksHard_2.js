@@ -9,12 +9,12 @@ const taxHard = function () {
         yourProfit -= yourProfit - 50000;
     } 
 
-    if (yourProfit > 15000 && yourProfit <= 50000) {
+    if (yourProfit > 15000) {
         yourTax = (yourProfit - 15000)*0.2 + yourTax;
         yourProfit -= yourProfit - 15000;
     }
 
-    if (yourProfit <= 15000) {
+    if (yourProfit > 0) {
         yourTax = yourProfit*0.13 + yourTax; 
     } 
 

@@ -8,11 +8,11 @@ const tax = function () {
         yourTax = yourProfit/100*30;  
         console.log(`Ваш налог: ${yourTax} рублей`);
 
-    } else if (yourProfit > 15000 && yourProfit <= 50000) {
+    } else if (yourProfit > 15000) {
         yourTax = yourProfit/100*20; 
         console.log(`Ваш налог: ${yourTax} рублей`);
 
-    } else if (yourProfit <= 15000) {
+    } else if (yourProfit >= 0) {
         yourTax = yourProfit/100*13; 
         console.log(`Ваш налог: ${yourTax} рублей`);
 
@@ -21,4 +21,4 @@ const tax = function () {
     }
 };
 
-//tax();
+tax();
