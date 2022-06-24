@@ -21,4 +21,4 @@ const taxHard = function () {
     console.log(`Ваш налог: ${yourTax} рублей`);
 };
 
-taxHard();
+//taxHard();

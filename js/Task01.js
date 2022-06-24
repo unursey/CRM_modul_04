@@ -44,7 +44,7 @@ const calculate = (sum, count, promo) => {
     return rez;
 };
 
-console.log(calculate(100000, 10, "G3H2Z1"));
+//console.log(calculate(100000, 10, "G3H2Z1"));
 
 
 //Task05
@@ -64,5 +64,5 @@ const min = (a, b) => {
     return a < b ? a : b;
 };
 
-console.log(min(45, 10));
+//console.log(min(45, 10));
 
